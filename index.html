@@ -3,43 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mente Ativa 55+ | Caderno de Atividades para a Mente</title>
-  <meta name="description" content="Programa de 30 dias com exercícios simples, no papel e com letra grande, para manter a mente sempre em movimento depois dos 55. Acesso imediato por R$27.">
+  <title>Mente Ativa 55+ | Caderno de atividades para a mente</title>
+  <meta name="description" content="Caderno com 30 dias de atividades no papel, com letra grande, para exercitar a memória, as palavras e os números depois dos 55.">
   <meta name="theme-color" content="#1B3A6B">
+  <link rel="canonical" href="https://mente-ativa-55.vercel.app/">
 
-  <!-- Open Graph (compartilhamento no WhatsApp/Facebook) -->
-  <meta property="og:title" content="Mente Ativa 55+ — Exercícios simples para a mente">
-  <meta property="og:description" content="30 dias, 15 minutos por dia, no papel e com letra grande. De R$97 por R$27.">
-  <meta property="og:image" content="assets/img/capa.webp">
+  <!-- Compartilhamento (WhatsApp/Facebook): imagem precisa de endereço completo -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mente-ativa-55.vercel.app/">
+  <meta property="og:title" content="Mente Ativa 55+ — Caderno de atividades para a mente">
+  <meta property="og:description" content="30 dias de atividades no papel, com letra grande. Cerca de 15 minutos por dia.">
+  <meta property="og:image" content="https://mente-ativa-55.vercel.app/assets/img/capa.webp">
 
-  <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/img/capa.webp">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- Meta Pixel (código em arquivo separado por segurança) -->
+  <script src="assets/js/pixel.js"></script>
+  <noscript><img class="hidden" height="1" width="1" src="https://www.facebook.com/tr?id=630700595718957&ev=PageView&noscript=1" alt=""></noscript>
 </head>
 <body>
 
-  <!-- ===== FAIXA DE OFERTA ===== -->
-  <div class="topbar">
-    <p><span class="topbar__tag">Oferta especial</span> De <s>R$97</s> por <strong>R$27</strong> · Acesso imediato</p>
-  </div>
-
-  <!-- ===== CABEÇALHO ===== -->
   <header class="header" id="header">
     <div class="container header__inner">
-      <a href="#inicio" class="logo" aria-label="Mente Ativa 55+">
-        <span class="logo__mark">M</span>
+      <a href="#inicio" class="logo">
+        <span class="logo__mark" aria-hidden="true">M</span>
         <span class="logo__text">Mente Ativa <em>55+</em></span>
       </a>
       <div class="header__actions">
-        <button class="font-toggle" id="fontToggle" type="button" aria-pressed="false" title="Aumentar o tamanho do texto">
-          A<span>+</span>
-        </button>
+        <button class="font-toggle" id="fontToggle" type="button" aria-pressed="false" title="Aumentar o tamanho do texto">A<span>+</span></button>
         <a href="#oferta" class="btn btn--sm">Quero o meu</a>
       </div>
     </div>
@@ -47,432 +42,199 @@
 
   <main>
 
-    <!-- ===== HERO ===== -->
+    <!-- 1. INÍCIO -->
     <section class="hero" id="inicio">
       <div class="container hero__grid">
-        <div class="hero__copy">
-          <p class="eyebrow reveal">Caderno de atividades para quem tem 55+</p>
-          <h1 class="hero__title reveal">
-            Exercícios simples para manter sua mente <span class="mark">sempre em movimento</span>
-          </h1>
-          <p class="hero__lead reveal">
-            Um programa de <strong>30 dias</strong>, com <strong>15 minutos por dia</strong>, feito no papel, com lápis e
-            letra grande. Sem aplicativo, sem complicação — no seu tempo.
+        <div>
+          <h1 class="hero__title">Exercícios simples para manter a mente em movimento depois dos 55</h1>
+          <p class="hero__lead">
+            Um caderno com 30 dias de atividades para fazer no papel, com lápis e letra grande.
+            Cerca de 15 minutos por dia, sem aplicativo.
           </p>
-
-          <ul class="hero__checks reveal">
-            <li>Memória, palavras, números, coordenação e bem-estar</li>
-            <li>Explicação simples e gabarito completo</li>
-            <li>Imprima em casa e use quantas vezes quiser</li>
+          <ul class="checks">
+            <li>Memória, palavras, números e coordenação</li>
+            <li>Explicação simples e gabarito no final</li>
+            <li>Imprime em casa e usa quantas vezes quiser</li>
           </ul>
-
-          <div class="hero__cta reveal">
-            <a href="#oferta" class="btn btn--lg btn--pulse js-checkout">
-              Quero minha mente ativa por R$27
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <p class="microcopy">
-              <span>✓ Pagamento único</span>
-              <span>✓ Acesso imediato</span>
-              <span>✓ 7 dias de garantia</span>
-            </p>
-          </div>
+          <a href="#oferta" class="btn btn--lg">Quero começar</a>
+          <p class="microcopy">Acesso imediato · 7 dias de garantia</p>
         </div>
-
-        <div class="hero__visual reveal">
-          <div class="hero__glow" aria-hidden="true"></div>
-          <img src="assets/img/capa.webp" alt="Capa do Caderno de Atividades Mente Ativa 55+" class="hero__book" width="580" height="840">
-          <div class="float-badge float-badge--a">
-            <strong>30</strong><span>dias de<br>treino</span>
-          </div>
-          <div class="float-badge float-badge--b">
-            <strong>15</strong><span>minutos<br>por dia</span>
-          </div>
-          <div class="float-badge float-badge--c">
-            <span class="stamp">+2 bônus</span>
-          </div>
-        </div>
+        <img src="assets/img/capa.webp" alt="Capa do caderno Mente Ativa 55+" class="hero__book" width="580" height="840">
       </div>
     </section>
 
-    <!-- ===== IDENTIFICAÇÃO ===== -->
-    <section class="section pain" id="identificacao">
-      <div class="container pain__grid">
-        <div class="pain__images reveal">
-          <img src="assets/img/esquecimento.webp" alt="Senhora pensativa olhando pela janela" loading="lazy" class="pain__img pain__img--1">
-          <img src="assets/img/frustrado.webp" alt="Senhor com a mão na testa tentando lembrar" loading="lazy" class="pain__img pain__img--2">
+    <!-- 2. VÍDEO -->
+    <section class="section section--cream" id="video">
+      <div class="container video">
+        <div class="video__copy">
+          <h2 class="h2">Veja o caderno por dentro</h2>
+          <p>Em 3 minutos mostramos as páginas, como funciona cada dia e tudo o que vem junto. Ligue o som.</p>
         </div>
-        <div class="pain__copy">
-          <p class="eyebrow reveal">Isso já aconteceu com você?</p>
-          <h2 class="h2 reveal">Entrou num cômodo e esqueceu o que ia buscar?</h2>
-          <p class="reveal">
-            Ou aquele nome que fica na <strong>ponta da língua</strong> e simplesmente não vem? Se isso tem acontecido com
-            você — ou com seu pai, sua mãe, alguém que você ama — fique comigo nos próximos minutos.
-          </p>
-          <p class="reveal">
-            Depois dos 55 anos, é natural perceber pequenas mudanças. Uma lembrança que demora. Uma conta que antes era
-            rápida e agora pede mais atenção. E muita gente acha que isso é coisa da idade e que não tem o que fazer.
-          </p>
-          <blockquote class="pullquote reveal">
-            Mas a mente funciona parecido com o corpo: o músculo que não é usado enfraquece; o que é exercitado todo dia
-            se mantém firme.
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== PROBLEMA ===== -->
-    <section class="section problem">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="eyebrow eyebrow--light">O problema</p>
-          <h2 class="h2">Ninguém ensina como exercitar a mente do jeito certo</h2>
-        </div>
-        <div class="problem__grid">
-          <article class="problem__card reveal">
-            <span class="problem__icon" aria-hidden="true">✕</span>
-            <h3>Palavras cruzadas</h3>
-            <p>Ou são difíceis demais e desanimam, ou fáceis demais e não desafiam nada.</p>
-          </article>
-          <article class="problem__card reveal">
-            <span class="problem__icon" aria-hidden="true">✕</span>
-            <h3>Aplicativos de celular</h3>
-            <p>Letra pequena, tela que cansa a vista, botões que confundem.</p>
-          </article>
-          <article class="problem__card reveal">
-            <span class="problem__icon" aria-hidden="true">✕</span>
-            <h3>O resultado</h3>
-            <p>A pessoa acaba desistindo — e a mente fica parada.</p>
-          </article>
-        </div>
-        <p class="problem__turn reveal">Foi por isso que nasceu o <strong>Mente Ativa 55+</strong>.</p>
-      </div>
-    </section>
-
-    <!-- ===== VÍDEO ===== -->
-    <section class="section video-sec" id="video">
-      <div class="container video-sec__grid">
-        <div class="video-sec__copy">
-          <p class="eyebrow reveal">Assista antes de decidir</p>
-          <h2 class="h2 reveal">Veja em 3 minutos como o Mente Ativa funciona</h2>
-          <p class="reveal">Toque no vídeo com o som ligado. Mostramos as páginas por dentro, o método e tudo o que você recebe.</p>
-          <a href="#oferta" class="btn reveal js-checkout">Quero começar hoje</a>
-        </div>
-        <div class="video-frame reveal">
+        <div class="video-frame">
           <video id="vsl" src="assets/video/vsl.mp4" poster="assets/img/vsl-capa.webp" preload="none" playsinline></video>
           <button class="video-frame__play" id="vslPlay" type="button" aria-label="Assistir ao vídeo">
-            <span class="video-frame__btn">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-            </span>
-            <span class="video-frame__label">Assistir com som</span>
+            <span class="video-frame__btn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
           </button>
         </div>
       </div>
     </section>
 
-    <!-- ===== O QUE É ===== -->
-    <section class="section about" id="programa">
-      <div class="container about__grid">
-        <div class="about__copy">
-          <p class="eyebrow reveal">O programa</p>
-          <h2 class="h2 reveal">Trinta dias, todos pensados para quem tem mais de 50</h2>
-          <p class="reveal">
-            Letra grande, explicação simples e atividades para fazer <strong>no papel</strong>, no seu tempo. Sentado na
-            mesa da cozinha, com um cafezinho do lado.
-          </p>
-          <div class="stats">
-            <div class="stat reveal"><strong class="js-count" data-target="30">0</strong><span>dias de programa</span></div>
-            <div class="stat reveal"><strong class="js-count" data-target="15">0</strong><span>minutos por dia</span></div>
-            <div class="stat reveal"><strong class="js-count" data-target="3">0</strong><span>atividades diárias</span></div>
-          </div>
-          <p class="reveal small">A cada semana o desafio aumenta um pouquinho — para a mente continuar crescendo.</p>
-        </div>
-        <div class="about__visual reveal">
-          <img src="assets/img/leitor-mente-ativa.webp" alt="Senhor sorrindo enquanto lê o caderno Mente Ativa 55+" loading="lazy">
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== MÉTODO M.E.N.T.E ===== -->
-    <section class="section method" id="metodo">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="eyebrow">O método</p>
-          <h2 class="h2">Cinco pilares. Uma palavra: <span class="mark">M.E.N.T.E.</span></h2>
-          <p>Toque em cada letra para ver o que você vai treinar.</p>
-        </div>
-
-        <div class="method__tabs" role="tablist" aria-label="Pilares do método">
-          <button class="method__tab is-active" role="tab" aria-selected="true" data-pillar="0"><span>M</span>Memória</button>
-          <button class="method__tab" role="tab" aria-selected="false" data-pillar="1"><span>E</span>Expressão</button>
-          <button class="method__tab" role="tab" aria-selected="false" data-pillar="2"><span>N</span>Números</button>
-          <button class="method__tab" role="tab" aria-selected="false" data-pillar="3"><span>T</span>Toque</button>
-          <button class="method__tab" role="tab" aria-selected="false" data-pillar="4"><span>E</span>Equilíbrio</button>
-        </div>
-
-        <div class="method__panel reveal" id="methodPanel" role="tabpanel" aria-live="polite">
-          <div class="method__image">
-            <img id="pillarImg" src="assets/img/m-memoria.webp" alt="Página de Memória do caderno" loading="lazy">
-          </div>
-          <div class="method__text">
-            <span class="method__letter" id="pillarLetter">M</span>
-            <h3 id="pillarTitle">Memória</h3>
-            <p class="method__tagline" id="pillarTagline">Leia, guarde… e veja quantos você lembra!</p>
-            <p id="pillarDesc">Exercícios para guardar e lembrar informações do dia a dia — como a lista do mercado, nomes e recados.</p>
-            <div class="method__nav">
-              <button type="button" class="method__arrow" id="pillarPrev" aria-label="Pilar anterior">←</button>
-              <span class="method__count" id="pillarCount">1 / 5</span>
-              <button type="button" class="method__arrow" id="pillarNext" aria-label="Próximo pilar">→</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== COMO FUNCIONA ===== -->
-    <section class="section how" id="como-funciona">
-      <div class="container how__grid">
-        <div class="how__visual reveal">
-          <img src="assets/img/mockup-impressao.webp" alt="Caderno Mente Ativa 55+ impresso com várias páginas de atividades" loading="lazy">
-        </div>
-        <div class="how__copy">
-          <p class="eyebrow reveal">Como funciona</p>
-          <h2 class="h2 reveal">Você recebe tudo na hora e transforma em um caderno de treino</h2>
-          <ol class="steps">
-            <li class="step reveal">
-              <span class="step__num">1</span>
-              <div><h3>Receba na hora</h3><p>Logo após a compra, o material chega no seu e-mail.</p></div>
-            </li>
-            <li class="step reveal">
-              <span class="step__num">2</span>
-              <div><h3>Imprima</h3><p>Em casa ou em qualquer gráfica. Use quantas vezes quiser.</p></div>
-            </li>
-            <li class="step reveal">
-              <span class="step__num">3</span>
-              <div><h3>Encaderne e comece</h3><p>Vira o seu caderno de treino. Três atividades por dia, cerca de 15 minutos.</p></div>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== INCLUSOS ===== -->
-    <section class="section extras">
-      <div class="container extras__grid">
-        <article class="extra reveal">
-          <img src="assets/img/gabarito.webp" alt="Página do gabarito completo dos 30 dias" loading="lazy">
-          <div class="extra__body">
-            <span class="pill">Incluso</span>
-            <h3>Gabarito completo</h3>
-            <p>Confira suas respostas de todos os 30 dias. Errar faz parte do treino!</p>
-          </div>
-        </article>
-        <article class="extra extra--cert reveal">
-          <div class="cert" aria-hidden="true">
-            <span class="cert__seal">★</span>
-            <span class="cert__title">Certificado</span>
-            <span class="cert__sub">de conclusão</span>
-            <span class="cert__line"></span>
-            <span class="cert__name">Mente Ativa 55+</span>
-          </div>
-          <div class="extra__body">
-            <span class="pill">Incluso</span>
-            <h3>Certificado de conclusão</h3>
-            <p>Terminou os 30 dias? Imprima, assine e pendure com orgulho.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===== PRESENTE ===== -->
-    <section class="section gift">
-      <div class="container gift__grid">
-        <div class="gift__copy">
-          <p class="eyebrow eyebrow--gold reveal">Para presentear</p>
-          <h2 class="h2 reveal">Pensando no seu pai ou na sua mãe?</h2>
-          <p class="reveal">
-            Esse é um presente que não fica na gaveta. É um momento do dia dedicado a eles.
-          </p>
-          <p class="reveal">
-            Muitas famílias fazem as atividades juntas — até com os netos. Vira conversa, risada e cuidado.
-          </p>
-          <a href="#oferta" class="btn btn--gold reveal js-checkout">Quero dar esse presente</a>
-        </div>
-        <div class="gift__images reveal">
-          <img src="assets/img/familia.webp" alt="Avós e neto fazendo atividades juntos na mesa" loading="lazy" class="gift__img gift__img--1">
-          <img src="assets/img/casal.webp" alt="Casal de idosos fazendo atividades juntos no sofá" loading="lazy" class="gift__img gift__img--2">
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== BÔNUS ===== -->
-    <section class="section bonus" id="bonus">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="eyebrow">Garantindo hoje</p>
-          <h2 class="h2">Você ainda leva <span class="mark">2 bônus</span></h2>
-        </div>
-        <div class="bonus__grid">
-          <article class="bonus__card reveal">
-            <div class="bonus__media"><img src="assets/img/caca-palavras.webp" alt="Caça-palavras com letra grande sendo resolvido a caneta" loading="lazy"></div>
-            <div class="bonus__body">
-              <span class="bonus__tag">Bônus 1</span>
-              <h3>50 caça-palavras com letra gigante</h3>
-              <p>Para treinar sem forçar a vista. Com gabarito no final.</p>
-            </div>
-          </article>
-          <article class="bonus__card reveal">
-            <div class="bonus__media"><img src="assets/img/calendario.webp" alt="Pessoa marcando o calendário de hábitos na geladeira" loading="lazy"></div>
-            <div class="bonus__body">
-              <span class="bonus__tag">Bônus 2</span>
-              <h3>Calendário de hábitos para a geladeira</h3>
-              <p>Para marcar todo dia os cuidados com a sua mente.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== OFERTA ===== -->
-    <section class="section offer" id="oferta">
-      <div class="container">
-        <div class="offer__card reveal">
-          <div class="offer__ribbon">Oferta especial</div>
-          <div class="offer__grid">
-            <div class="offer__product">
-              <img src="assets/img/capa.webp" alt="Caderno Mente Ativa 55+" loading="lazy">
-            </div>
-            <div class="offer__details">
-              <h2 class="offer__title">Programa completo + 2 bônus</h2>
-              <ul class="offer__list">
-                <li>Caderno Mente Ativa 55+ — 30 dias de atividades</li>
-                <li>Método M.E.N.T.E. completo</li>
-                <li>Gabarito de todos os dias</li>
-                <li>Certificado de conclusão</li>
-                <li><strong>Bônus 1:</strong> 50 caça-palavras com letra gigante</li>
-                <li><strong>Bônus 2:</strong> Calendário de hábitos para a geladeira</li>
-              </ul>
-
-              <div class="price">
-                <p class="price__from">De <s>R$97</s> por apenas</p>
-                <p class="price__value"><span class="price__cur">R$</span>27</p>
-                <p class="price__inst">ou em até 12x no cartão</p>
-                <p class="price__note">Menos que uma pizza.</p>
-              </div>
-
-              <a href="#" class="btn btn--lg btn--block btn--pulse js-checkout" data-checkout>
-                Garantir meu Mente Ativa 55+
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
-              <div class="trust">
-                <span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Compra 100% segura</span>
-                <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>Acesso imediato</span>
-                <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5z"/></svg>Pagamento único</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== GARANTIA ===== -->
-    <section class="section guarantee">
-      <div class="container guarantee__inner reveal">
-        <div class="seal" aria-hidden="true">
-          <span class="seal__num">7</span>
-          <span class="seal__txt">dias</span>
-          <span class="seal__sub">de garantia</span>
-        </div>
+    <!-- 3. PARA QUEM É -->
+    <section class="section" id="para-quem">
+      <div class="container split">
+        <img src="assets/img/esquecimento.webp" alt="Senhora pensativa olhando pela janela" loading="lazy" class="split__img" width="600" height="720">
         <div>
-          <h2 class="h2">Não gostou? Devolvemos 100% do seu dinheiro.</h2>
-          <p>Você tem 7 dias para conhecer todo o material. Se não gostar, devolvemos cada centavo. Sem perguntas. Risco zero.</p>
-          <p class="small">Garantia Hotmart · Compra 100% segura</p>
+          <h2 class="h2">Entrou num cômodo e esqueceu o que ia buscar?</h2>
+          <p>
+            Ou aquele nome fica na ponta da língua e não vem. Depois dos 55 é comum notar essas pequenas
+            mudanças — e muita gente acha que não tem o que fazer.
+          </p>
+          <p>
+            A mente gosta de ser usada. Palavras cruzadas costumam ser difíceis demais ou fáceis demais,
+            e aplicativo no celular cansa a vista. O Mente Ativa foi feito para ficar no meio disso:
+            atividades curtas, no papel, que ficam um pouco mais desafiadoras a cada semana.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- ===== FAQ ===== -->
-    <section class="section faq" id="faq">
+    <!-- 4. MÉTODO -->
+    <section class="section section--cream" id="metodo">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">O que você treina: o método M.E.N.T.E.</h2>
+          <p>Todo dia tem três atividades, misturando estes cinco temas.</p>
+        </div>
+        <div class="pillars">
+          <article class="pillar">
+            <img src="assets/img/m-memoria.webp" alt="Página de Memória: a lista do mercado" loading="lazy">
+            <h3><span>M</span> Memória</h3>
+            <p>Guardar e lembrar listas, nomes e recados do dia a dia.</p>
+          </article>
+          <article class="pillar">
+            <img src="assets/img/e-expressao.webp" alt="Página de Expressão com caça-palavras" loading="lazy">
+            <h3><span>E</span> Expressão</h3>
+            <p>Jogos de palavras para manter o vocabulário afiado.</p>
+          </article>
+          <article class="pillar">
+            <img src="assets/img/n-numeros.webp" alt="Página de Números com contas do dia a dia" loading="lazy">
+            <h3><span>N</span> Números</h3>
+            <p>Contas da feira, troco e sequências, sem calculadora.</p>
+          </article>
+          <article class="pillar">
+            <img src="assets/img/t-toque.webp" alt="Página de Toque com labirinto" loading="lazy">
+            <h3><span>T</span> Toque</h3>
+            <p>Labirintos e traçados que unem a mão e o pensamento.</p>
+          </article>
+          <article class="pillar">
+            <img src="assets/img/e-equilibrio.webp" alt="Página de Equilíbrio com exercício de respiração" loading="lazy">
+            <h3><span>E</span> Equilíbrio</h3>
+            <p>Respiração, sono e pequenos hábitos de bem-estar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. O QUE VOCÊ RECEBE -->
+    <section class="section" id="conteudo">
+      <div class="container split">
+        <img src="assets/img/mockup-impressao.webp" alt="Caderno Mente Ativa 55+ impresso" loading="lazy" class="split__img" width="600" height="600">
+        <div>
+          <h2 class="h2">O que você recebe</h2>
+          <ul class="includes">
+            <li><strong>Caderno Mente Ativa 55+</strong> — 30 dias de atividades</li>
+            <li><strong>Gabarito completo</strong> para conferir as respostas</li>
+            <li><strong>Certificado de conclusão</strong> para imprimir no fim</li>
+            <li><strong>Bônus:</strong> 50 caça-palavras com letra gigante</li>
+            <li><strong>Bônus:</strong> calendário de hábitos para a geladeira</li>
+          </ul>
+          <p class="note">
+            Chega no seu e-mail logo após a compra. É só imprimir em casa ou numa gráfica,
+            grampear ou encadernar, e começar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PRESENTE -->
+    <section class="section section--navy" id="presente">
+      <div class="container split split--reverse">
+        <img src="assets/img/familia.webp" alt="Avós e neto fazendo atividades juntos na mesa" loading="lazy" class="split__img" width="600" height="600">
+        <div>
+          <h2 class="h2">Pensando no seu pai ou na sua mãe?</h2>
+          <p>
+            Muita gente compra para os pais: imprime, encaderna e entrega como um caderno de presente.
+            Dá para fazer as atividades juntos — até com os netos.
+          </p>
+          <a href="#oferta" class="btn btn--gold">Quero dar de presente</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. OFERTA + GARANTIA -->
+    <section class="section section--cream" id="oferta">
+      <div class="container">
+        <div class="offer">
+          <img src="assets/img/capa.webp" alt="Caderno Mente Ativa 55+" loading="lazy" class="offer__img" width="580" height="840">
+          <div class="offer__body">
+            <h2 class="h2">Mente Ativa 55+ completo</h2>
+            <p class="offer__sub">Caderno de 30 dias, gabarito, certificado e os 2 bônus.</p>
+            <p class="price"><s>R$97</s> <strong>R$27</strong></p>
+            <p class="price__inst">Pagamento único · ou em até 12x no cartão</p>
+            <a href="#" class="btn btn--lg btn--block js-checkout">Comprar agora</a>
+            <p class="microcopy">Pagamento seguro pela Hotmart · acesso imediato por e-mail</p>
+
+            <div class="guarantee">
+              <span class="guarantee__seal" aria-hidden="true">7<small>dias</small></span>
+              <p><strong>Garantia de 7 dias.</strong> Se não gostar, pede o reembolso pela Hotmart e recebe 100% do valor de volta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. DÚVIDAS -->
+    <section class="section" id="duvidas">
       <div class="container container--narrow">
-        <div class="section__head reveal">
-          <p class="eyebrow">Dúvidas frequentes</p>
-          <h2 class="h2">Perguntas e respostas</h2>
-        </div>
-
-        <div class="faq__list">
-          <details class="faq__item reveal">
-            <summary>Como eu recebo o material?</summary>
-            <div class="faq__answer"><p>Logo após a confirmação do pagamento, você recebe o acesso no seu e-mail. É um material digital (eBook) pronto para imprimir.</p></div>
+        <h2 class="h2 center">Dúvidas frequentes</h2>
+        <div class="faq">
+          <details>
+            <summary>Como eu recebo?</summary>
+            <p>Logo após a confirmação do pagamento, o acesso chega no seu e-mail. É um arquivo digital (PDF) pronto para imprimir.</p>
           </details>
-          <details class="faq__item reveal">
+          <details>
             <summary>Preciso saber mexer no celular ou no computador?</summary>
-            <div class="faq__answer"><p>Não. Basta abrir o arquivo uma vez e imprimir — ou pedir para alguém da família ou uma gráfica imprimir. Depois, tudo é feito no papel, com lápis.</p></div>
+            <p>Não. Basta abrir o arquivo uma vez e imprimir — ou pedir para alguém da família ou uma gráfica. Depois, tudo é feito no papel.</p>
           </details>
-          <details class="faq__item reveal">
+          <details>
             <summary>Posso imprimir mais de uma vez?</summary>
-            <div class="faq__answer"><p>Sim. Você pode imprimir quantas vezes quiser — para refazer o programa ou para fazer junto com outras pessoas da família.</p></div>
+            <p>Sim, quantas vezes quiser — para refazer o programa ou fazer junto com outras pessoas da família.</p>
           </details>
-          <details class="faq__item reveal">
-            <summary>Quanto tempo leva por dia?</summary>
-            <div class="faq__answer"><p>Cada dia tem três atividades e leva cerca de 15 minutos. Você faz no seu ritmo.</p></div>
-          </details>
-          <details class="faq__item reveal">
-            <summary>Serve para dar de presente?</summary>
-            <div class="faq__answer"><p>Serve, e muita gente compra para os pais. Você recebe o arquivo, imprime, encaderna e entrega como um caderno de presente.</p></div>
-          </details>
-          <details class="faq__item reveal">
+          <details>
             <summary>Posso parcelar?</summary>
-            <div class="faq__answer"><p>Sim. O pagamento é único e pode ser parcelado em até 12x no cartão. Também é possível pagar à vista.</p></div>
+            <p>Sim, em até 12x no cartão. Também dá para pagar à vista.</p>
           </details>
-          <details class="faq__item reveal">
-            <summary>E se eu não gostar?</summary>
-            <div class="faq__answer"><p>Você tem 7 dias de garantia. Se não gostar, é só pedir o reembolso e devolvemos 100% do valor, sem perguntas.</p></div>
+          <details>
+            <summary>Substitui acompanhamento médico?</summary>
+            <p>Não. É um passatempo para exercitar a mente e não substitui o acompanhamento do seu médico.</p>
           </details>
-          <details class="faq__item reveal">
-            <summary>O Mente Ativa substitui acompanhamento médico?</summary>
-            <div class="faq__answer"><p>Não. Esse material é um complemento para uma vida saudável e não substitui o acompanhamento do seu médico.</p></div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== CTA FINAL ===== -->
-    <section class="section final">
-      <div class="container final__inner reveal">
-        <img src="assets/img/sorriso.webp" alt="Senhor sorrindo" loading="lazy" class="final__img">
-        <div>
-          <h2 class="h2">Seu cérebro também merece cuidado.</h2>
-          <p>Comece hoje mesmo o seu primeiro dia de treino. Sua mente agradece.</p>
-          <a href="#oferta" class="btn btn--lg btn--pulse js-checkout">Garantir por R$27</a>
-          <p class="microcopy microcopy--light"><span>✓ Acesso imediato</span><span>✓ 7 dias de garantia</span></p>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ===== RODAPÉ ===== -->
   <footer class="footer">
     <div class="container">
-      <a href="#inicio" class="logo logo--light">
-        <span class="logo__mark">M</span>
-        <span class="logo__text">Mente Ativa <em>55+</em></span>
-      </a>
-      <p class="footer__disclaimer">
-        Este material é um complemento para uma vida saudável e não substitui o acompanhamento médico.
-        Os resultados podem variar de pessoa para pessoa.
-      </p>
-      <p class="footer__copy">© <span id="year"></span> Mente Ativa 55+. Todos os direitos reservados.</p>
+      <p>Este material é um complemento para uma vida saudável e não substitui o acompanhamento médico. Os resultados variam de pessoa para pessoa.</p>
+      <p>© <span id="year">2026</span> Mente Ativa 55+</p>
     </div>
   </footer>
 
-  <!-- ===== CTA FIXO (MOBILE) ===== -->
+  <!-- Botão fixo no celular -->
   <div class="sticky-cta" id="stickyCta" aria-hidden="true">
-    <div class="sticky-cta__price">
-      <s>R$97</s>
-      <strong>R$27</strong>
-    </div>
-    <a href="#oferta" class="btn btn--block js-checkout" tabindex="-1">Quero o meu agora</a>
+    <span class="sticky-cta__price">R$27</span>
+    <a href="#oferta" class="btn btn--block" tabindex="-1">Quero o meu</a>
   </div>
 
   <script src="assets/js/main.js" defer></script>
