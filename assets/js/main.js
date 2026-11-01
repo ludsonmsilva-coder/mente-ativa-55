@@ -19,7 +19,7 @@
   /* 1. CONFIGURAÇÃO ======================================================= */
   const CONFIG = {
     // Link do checkout da Hotmart (ex.: "https://pay.hotmart.com/XXXXXXXX")
-    checkoutUrl: "https://pay.hotmart.com/Y108287925O",
+    checkoutUrl: "",
 
     // false = botões do topo rolam até a oferta e só o botão da oferta vai pro checkout
     // true  = todos os botões de compra vão direto pro checkout
